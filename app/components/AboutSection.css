@@ -1,0 +1,163 @@
+.about-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 80px 30px;
+}
+
+.about-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+}
+
+/* Content */
+
+.about-content {
+  max-width: 650px;
+}
+
+.about-small-heading {
+  display: inline-block;
+  margin-bottom: 10px;
+  
+
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #f59127;
+}
+
+.about-content h2 {
+  margin: 0 0 15px;
+
+  font-size: clamp(34px, 3.8vw, 50px);
+
+  line-height: 1.08;
+  font-weight: 600;
+  color: #111111;
+}
+.about-content p {
+  margin: 0 0 18px;
+
+  font-size: 17px;
+  line-height: 1.8;
+  color: #555555;
+}
+
+/* Buttons */
+
+.about-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.about-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 155px;
+  padding: 15px 25px;
+
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.primary-btn {
+  background: #f59127;
+  color: #ffffff;
+  border: 1px solid #f59127;
+}
+
+.primary-btn:hover {
+  background: #d96f0b;
+  border-color: #d96f0b;
+}
+
+.secondary-btn {
+  background: transparent;
+  color: #111111;
+  border: 1px solid #111111;
+}
+
+.secondary-btn:hover {
+  background: #111111;
+  color: #ffffff;
+}
+
+/* Image */
+
+.about-image-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 4px; 
+}
+
+/* Tablet */
+
+@media (max-width: 992px) {
+  .about-section {
+    padding: 80px 25px;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .about-content {
+    max-width: 750px;
+  }
+
+  .about-image-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 576px) {
+  .about-section {
+    padding: 60px 20px;
+  }
+
+  .about-content h2 {
+    font-size: 40px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .about-buttons {
+    flex-wrap: wrap;
+  }
+
+  .about-btn {
+    min-width: 140px;
+    padding: 13px 20px;
+  }
+}

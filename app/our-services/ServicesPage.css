@@ -1,0 +1,636 @@
+/* =========================
+   SERVICES PAGE
+========================= */
+
+.servicespg-page {
+  width: 100%;
+}
+
+
+/* =========================
+   BANNER
+========================= */
+
+.servicespg-banner {
+  width: 100%;
+  min-height: 240px;
+  background: #f28c28;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.servicespg-banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.servicespg-banner h1 {
+  margin: 0 0 12px;
+  color: #ffffff;
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.servicespg-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.servicespg-breadcrumb a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.servicespg-breadcrumb a:hover {
+  opacity: 0.75;
+}
+
+
+/* =========================
+   SERVICES INTRO
+========================= */
+
+.servicespg-intro {
+  width: 100%;
+  padding: 60px 20px 30px;
+  background: #ffffff;
+}
+
+.servicespg-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.servicespg-intro-content {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.servicespg-small-title {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #f28c28;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.servicespg-intro h2 {
+  margin: 0 0 15px;
+  color: #222222;
+  font-size: 35px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.servicespg-intro p {
+  margin: 0 auto;
+  max-width: 750px;
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+  .servicespg-intro {
+    padding: 70px 20px;
+  }
+
+  .servicespg-intro h2 {
+    font-size: 36px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .servicespg-banner {
+    min-height: 190px;
+    padding: 30px 20px;
+  }
+
+  .servicespg-banner h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+  }
+
+  .servicespg-breadcrumb {
+    font-size: 14px;
+    gap: 8px;
+  }
+
+  .servicespg-intro {
+    padding: 60px 20px;
+  }
+
+  .servicespg-small-title {
+    font-size: 13px;
+  }
+
+  .servicespg-intro h2 {
+    font-size: 29px;
+  }
+
+  .servicespg-intro p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+}
+/* =========================
+   DETAILED SERVICES
+========================= */
+
+.servicespg-services {
+  width: 100%;
+  padding: 20px 20px 50px;
+  background: #ffffff;
+}
+
+.servicespg-services-heading {
+  max-width: 850px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.servicespg-small-title {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #f28c28;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.servicespg-services-heading h2 {
+  margin: 0 0 18px;
+  color: #222222;
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.servicespg-services-heading p {
+  max-width: 750px;
+  margin: 0 auto;
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* =========================
+   SERVICES GRID
+========================= */
+
+.servicespg-services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+
+/* =========================
+   SERVICE CARD
+========================= */
+
+.servicespg-service-card {
+  display: flex;
+  gap: 25px;
+  padding: 35px;
+  background: #f7f7f7;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.servicespg-service-card:hover {
+cursor: pointer;
+}
+
+
+/* =========================
+   SERVICE ICON
+========================= */
+
+.servicespg-service-icon {
+  flex-shrink: 0;
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff1e6;
+  border-radius: 50px;
+  font-size: 28px;
+  color: #000; 
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.servicespg-service-content {
+  flex: 1;
+}
+
+.servicespg-service-content h3 {
+  margin: 0 0 15px;
+  color: #222222;
+  font-size: 24px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.servicespg-service-content p {
+  margin: 0 0 12px;
+  color: #666666;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.servicespg-service-content p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 600px) {
+
+  .servicespg-services {
+    padding: 0 20px 60px;
+  }
+
+  .servicespg-services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .servicespg-service-card {
+    gap: 16px;
+    padding: 25px 20px;
+  }
+
+  .servicespg-service-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 23px;
+  }
+
+  .servicespg-service-content h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+  }
+
+  .servicespg-service-content p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+}
+/* =================================
+   SERVICES HIGHLIGHT
+================================= */
+
+.servicespg-highlight {
+  width: 100%;
+  padding: 60px 20px;
+  background: #eee;
+}
+
+.servicespg-highlight-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.servicespg-highlight-image {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.servicespg-highlight-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.servicespg-highlight-content {
+  max-width: 620px;
+}
+
+.servicespg-highlight-content h2 {
+  margin: 0 0 20px;
+  color: #222222;
+  font-size: 35px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.servicespg-highlight-content p {
+  margin: 0 0 25px;
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.8;
+}
+.servicespg-highlight-list {
+  margin: 0;
+  padding-left: 22px;
+  list-style-type: disc;
+  color: #444444;
+}
+
+.servicespg-highlight-list li {
+  display: list-item;
+  margin-bottom: 12px;
+  padding-left: 5px;
+  color: #444444;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.servicespg-highlight-list li::marker {
+  color: #f28c28;
+  font-size: 15px;
+}
+
+.servicespg-highlight-list li:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 900px) {
+  .servicespg-highlight {
+    padding: 70px 20px;
+  }
+
+  .servicespg-highlight-grid {
+    gap: 40px;
+  }
+
+  .servicespg-highlight-image {
+    height: 420px;
+  }
+
+  .servicespg-highlight-content h2 {
+    font-size: 34px;
+  }
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 600px) {
+  .servicespg-highlight {
+    padding: 60px 20px;
+  }
+
+  .servicespg-highlight-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .servicespg-highlight-image {
+    height: 300px;
+  }
+
+  .servicespg-highlight-content h2 {
+    font-size: 29px;
+    margin-bottom: 16px;
+  }
+
+  .servicespg-highlight-content p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+  }
+
+  .servicespg-highlight-list {
+    gap: 12px;
+  }
+
+  .servicespg-highlight-list li {
+    font-size: 14px;
+  }
+}
+/* WHY CHOOSE US */
+.about-why-section {
+  width: 100%;
+  padding: 60px 20px;
+  background: #111111;
+}
+
+.about-why-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 90px;
+  align-items: center;
+}
+
+.about-why-content {
+  max-width: 600px;
+}
+
+.about-why-content .about-small-heading {
+  margin-bottom: 15px;
+  color: #f28c28;
+  font-weight: 600; 
+}
+
+.about-why-content h2 {
+  margin: 0 0 25px;
+  color: #ffffff;
+  font-size: clamp(30px, 4vw, 52px);
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.about-why-content > p {
+  margin: 0;
+  color: #c8c8c8;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* BUTTONS */
+.about-why-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.about-why-primary-btn,
+.about-why-secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px 24px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.about-why-primary-btn {
+  background: #f28c28;
+  color: #ffffff;
+}
+
+.about-why-primary-btn:hover {
+  background: #ffffff;
+  color: #111111;
+}
+
+.about-why-secondary-btn {
+  border: 1px solid #555555;
+  color: #ffffff;
+}
+
+.about-why-secondary-btn:hover {
+  border-color: #f28c28;
+  background: #f28c28;
+}
+
+.about-why-primary-btn span,
+.about-why-secondary-btn span {
+  font-size: 20px;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+
+.about-why-primary-btn:hover span,
+.about-why-secondary-btn:hover span {
+  transform: translateX(4px);
+}
+
+/* WHY CHOOSE US ITEMS */
+.about-why-list {
+  width: 100%;
+}
+
+.about-why-item {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 25px;
+  padding: 28px 0;
+  border-bottom: 1px solid #333333;
+}
+
+.about-why-item:first-child {
+  border-top: 1px solid #333333;
+}
+
+.about-why-number {
+  color: #f28c28;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.about-why-item h3 {
+  margin: 0 0 8px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.about-why-item p {
+  max-width: 600px;
+  margin: 0;
+  color: #aaaaaa;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* TABLET */
+@media (max-width: 1000px) {
+  .about-why-section {
+    padding: 80px 20px;
+  }
+
+  .about-why-container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .about-why-content {
+    max-width: 800px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .about-why-section {
+    padding: 65px 20px;
+  }
+
+  .about-why-container {
+    gap: 45px;
+  }
+
+  .about-why-content h2 {
+    font-size: 34px;
+  }
+
+  .about-why-content > p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .about-why-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .about-why-primary-btn,
+  .about-why-secondary-btn {
+    width: 100%;
+  }
+
+  .about-why-item {
+    grid-template-columns: 45px 1fr;
+    gap: 15px;
+    padding: 24px 0;
+  }
+
+  .about-why-item h3 {
+    font-size: 19px;
+  }
+
+  .about-why-item p {
+    font-size: 14px;
+  }
+}

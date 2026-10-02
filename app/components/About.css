@@ -1,0 +1,185 @@
+.abouthome-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 50px 30px;
+}
+
+.abouthome-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.abouthome-image-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.abouthome-image {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.abouthome-content {
+  max-width: 650px;
+}
+
+.abouthome-small-heading {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #f59127;
+}
+
+.abouthome-content h2 {
+ margin: 0 0 18px;
+  font-size: clamp(30px, 3vw, 40px);
+  line-height: 1.1;
+  font-weight: 600;
+  color: #111111;
+}
+
+.abouthome-content p {
+  margin: 0 0 18px;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #555555;
+}
+
+/* =========================
+   ADDRESS
+========================= */
+
+.abouthome-info {
+  margin-top: 25px;
+}
+
+.abouthome-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+}
+
+.abouthome-info-icon {
+  flex-shrink: 0;
+  margin-top: 4px;
+  color: #f59127;
+  font-size: 18px;
+}
+
+/* =========================
+   CALL BUTTON
+========================= */
+
+.abouthome-call-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 25px;
+  padding: 14px 24px;
+  background: #f59127;
+  color: #ffffff;
+  border: 1px solid #f59127;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.abouthome-call-btn:hover {
+  background: #d96f0b;
+  border-color: #d96f0b;
+}
+
+.abouthome-call-btn svg {
+  font-size: 15px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+  .abouthome-section {
+    padding: 80px 25px;
+  }
+
+  .abouthome-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .abouthome-content {
+    max-width: 750px;
+  }
+
+  .abouthome-image-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 576px) {
+  .abouthome-section {
+    padding: 60px 20px;
+  }
+
+  .abouthome-container {
+    gap: 40px;
+  }
+
+  .abouthome-small-heading {
+    font-size: 14px;
+  }
+
+  .abouthome-content h2 {
+    font-size: 30px;
+    line-height: 1.1;
+  }
+
+  .abouthome-content p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .abouthome-info {
+    margin-top: 22px;
+  }
+
+  .abouthome-info-item {
+    font-size: 15px;
+  }
+
+  .abouthome-call-btn {
+    margin-top: 22px;
+    padding: 13px 20px;
+  }
+}

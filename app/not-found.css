@@ -1,0 +1,88 @@
+.not-found-page {
+  width: 100%;
+  min-height: 70vh;
+}
+
+.not-found-section {
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.not-found-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.not-found-number {
+  margin-bottom: 10px;
+  color: #f28c28;
+  font-size: clamp(90px, 15vw, 180px);
+  line-height: 1;
+  font-weight: 700;
+}
+
+.not-found-container h1 {
+  margin: 0 0 15px;
+  color: #111111;
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.not-found-container p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #666666;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.not-found-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 0 30px;
+  background: #f28c28;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.not-found-button:hover {
+  background: #111111;
+}
+
+@media (max-width: 600px) {
+  .not-found-section {
+    min-height: 65vh;
+    padding: 60px 20px;
+  }
+
+  .not-found-number {
+    font-size: 100px;
+  }
+
+  .not-found-container h1 {
+    font-size: 32px;
+  }
+
+  .not-found-container p {
+    font-size: 15px;
+  }
+
+  .not-found-button {
+    width: 100%;
+    max-width: 220px;
+  }
+}

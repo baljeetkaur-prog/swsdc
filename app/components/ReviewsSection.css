@@ -1,0 +1,328 @@
+.reviews-section {
+  width: 100%;
+  padding: 60px 0 40px;
+  background: #f5f5f5;
+  overflow: hidden;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.reviews-heading {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.reviews-subtitle {
+  display: inline-block;
+  margin-bottom: 14px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #f59127;
+}
+
+.reviews-heading h2 {
+  margin: 0;
+  font-size: 42px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: #171717;
+}
+.reviews-heading p {
+  max-width: 600px;
+  margin: 10px 0 0;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #666;
+}
+/* =========================
+   RATING + BUTTON ROW
+========================= */
+
+.reviews-top-row {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* =========================
+   RATING BOX
+========================= */
+
+.reviews-rating-box {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+
+  padding: 20px 28px;
+
+  background: #fff;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px; 
+
+  min-width: 320px;
+}
+
+.google-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.rating-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Rating number */
+
+.rating-number {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.rating-number strong {
+  font-size: 38px;
+  line-height: 1;
+  color: #171717;
+}
+
+.rating-number span {
+  font-size: 13px;
+  color: #888;
+}
+
+/* Stars */
+
+.rating-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.summary-stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  font-size: 19px;
+  color: #d7d7d7;
+}
+
+.star.active {
+  color: #f5a623;
+}
+
+.rating-count {
+  font-size: 12px;
+  color: #777;
+}
+
+/* =========================
+   VIEW REVIEWS BUTTON
+========================= */
+
+.reviews-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  align-self: center;
+
+  padding: 14px 25px;
+
+  background: #f59127;
+  color: #fff;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.reviews-button:hover {
+  background: #d96f0b;
+}
+
+/* =========================
+   INFINITE REVIEW SLIDER
+========================= */
+
+.reviews-slider-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.reviews-slider {
+  display: flex;
+  width: max-content;
+
+  animation: reviewsInfiniteScroll 55s linear infinite;
+}
+
+.reviews-track {
+  display: flex;
+  flex-shrink: 0;
+
+  gap: 10px;
+  padding-right: 20px;
+}
+
+/* Individual screenshot */
+
+.review-image {
+  flex-shrink: 0;
+
+  width: 320px;
+  height: 400px;
+
+  border: 1px solid #dedede;
+  border-radius: 4px;
+
+  overflow: hidden;
+  background: #fff;
+}
+.review-image:hover{
+    cursor: pointer;
+}
+
+.review-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* =========================
+   INFINITE ANIMATION
+========================= */
+
+@keyframes reviewsInfiniteScroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* =========================
+   LOADING
+========================= */
+
+.reviews-loading {
+  margin-top: 30px;
+  font-size: 15px;
+  color: #777;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1200px) {
+  .reviews-top-row {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .review-image {
+    width: 280px;
+    height: 360px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+  .reviews-section {
+    padding: 70px 0;
+  }
+
+  .reviews-heading {
+    margin-bottom: 35px;
+  }
+
+  .reviews-heading h2 {
+    font-size: 30px;
+  }
+
+  .reviews-heading p {
+    font-size: 14px;
+  }
+
+  /* Rating + button */
+
+  .reviews-top-row {
+    flex-direction: column;
+    align-items: stretch;
+
+    margin-bottom: 45px;
+    gap: 15px;
+  }
+
+  .reviews-rating-box {
+    min-width: 0;
+    width: 100%;
+    padding: 18px 20px;
+  }
+
+  .google-logo {
+    width: 42px;
+    height: 42px;
+  }
+
+  .rating-content {
+    gap: 15px;
+  }
+
+  .rating-number strong {
+    font-size: 34px;
+  }
+
+  .star {
+    font-size: 17px;
+  }
+
+  .reviews-button {
+    width: 100%;
+  }
+
+  /* Screenshots */
+
+  .review-image {
+    width: 240px;
+    height: 310px;
+  }
+
+  .reviews-track {
+    gap: 14px;
+    padding-right: 14px;
+  }
+
+  .reviews-slider {
+    animation-duration: 45s;
+  }
+}

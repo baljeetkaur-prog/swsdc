@@ -1,0 +1,698 @@
+.navbar-wrapper {
+  width: 100%;
+  position: relative;
+  z-index: 1000;
+}
+
+
+/* =====================================================
+   TOP CONTACT BAR
+===================================================== */
+
+.navbar-contact-section {
+  width: 100%;
+  background: #000;
+}
+
+.navbar-contact-container {
+  width: 100%;
+  max-width: 1400px;
+  min-height: 43px;
+  margin: 0 auto;
+  padding: 0 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* =========================
+   CONTACT DETAILS
+========================= */
+
+.contact-details {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+}
+
+.contact-item svg {
+  font-size: 12px;
+  color: #f59127;
+}
+
+.contact-item:hover {
+  color: #d96f0b;
+}
+
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icon {
+  width: 27px;
+  height: 27px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  border-radius: 50%;
+  background-color: #f59127;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #d96f0b;
+}
+
+.social-icon svg {
+  font-size: 14px;
+}
+
+
+/* =====================================================
+   MAIN TOP SECTION
+===================================================== */
+
+.navbar-top-section {
+  width: 100%;
+  background: #f5f5f3;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.navbar-top-container {
+  width: 100%;
+  max-width: 1400px;
+  height: 105px;
+
+  margin: 0 auto;
+  padding: 8px 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* =====================================================
+   LOGO + BRAND
+===================================================== */
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.navbar-logo-image {
+  width: 100px !important;
+  height: 100px !important;
+
+  object-fit: contain;
+  display: block;
+}
+
+
+/* =========================
+   BRAND NAME
+========================= */
+
+.brand-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  color: #171717;
+  text-align: right;
+  line-height: 1.05;
+    font-size: 18px;
+      font-weight: 600;
+}
+
+.brand-name span {
+  font-size: 18px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.brand-name span + span {
+  margin-top: 9px;
+}
+
+
+/* =====================================================
+   VERIFY BUTTON
+===================================================== */
+
+.verify-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 200px;
+  height: 46px;
+
+  padding: 0 22px;
+
+  background: #f59127;
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  text-decoration: none;
+  white-space: nowrap;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+
+  flex-shrink: 0;
+}
+
+.verify-btn:hover {
+  background: #d96f0b;
+  color: #ffffff;
+}
+
+
+/* =====================================================
+   DESKTOP NAVIGATION
+===================================================== */
+
+.navbar-menu-section {
+  width: 100%;
+  max-width: 1400px;
+
+  min-height: 58px;
+
+  margin: 0 auto;
+
+  background: #111111;
+}
+
+.navbar-menu {
+  width: 100%;
+
+  min-height: 58px;
+
+  margin: 0 auto;
+  padding: 0 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 45px;
+}
+
+.navbar-menu a {
+  position: relative;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  text-decoration: none;
+  white-space: nowrap;
+
+  transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover,
+.navbar-menu a.active {
+  color: #f59127;
+}
+
+/* =========================
+   NAVIGATION UNDERLINE
+========================= */
+
+.navbar-menu a::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+
+  width: 0;
+  height: 2px;
+
+  background: #f59127;
+
+  transition: width 0.3s ease;
+}
+
+.navbar-menu a:hover::after,
+.navbar-menu a.active::after {
+  width: 100%;
+}
+
+/* =====================================================
+   MOBILE MENU BUTTON
+===================================================== */
+
+.mobile-menu-btn {
+  display: none;
+
+  border: none;
+  background: transparent;
+
+  color: #111111;
+
+  font-size: 25px;
+
+  cursor: pointer;
+
+  padding: 8px;
+}
+
+
+/* =====================================================
+   MOBILE SIDEBAR
+===================================================== */
+
+.mobile-sidebar {
+  position: fixed;
+
+  top: 0;
+  right: 0;
+
+  width: 300px;
+  max-width: 85vw;
+  height: 100vh;
+
+  background: #ffffff;
+
+  z-index: 2000;
+
+  transform: translateX(100%);
+
+  transition: transform 0.35s ease;
+
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
+}
+
+.mobile-sidebar.open {
+  transform: translateX(0);
+}
+
+
+/* =========================
+   SIDEBAR HEADER
+========================= */
+
+.mobile-sidebar-header {
+  min-height: 70px;
+
+  padding: 0 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #111111;
+
+  color: #ffffff;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.mobile-close-btn {
+  border: none;
+  background: transparent;
+
+  color: #ffffff;
+
+  font-size: 22px;
+
+  cursor: pointer;
+
+  padding: 5px;
+}
+
+.mobile-close-btn:hover {
+  color: #f59127;
+}
+
+
+/* =========================
+   SIDEBAR NAVIGATION
+========================= */
+
+.mobile-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px 0;
+}
+
+.mobile-sidebar-nav a {
+  display: block;
+
+  padding: 15px 25px;
+
+  color: #111111;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid #eeeeee;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    padding-left 0.3s ease;
+}
+
+.mobile-sidebar-nav a:hover {
+  background: #f5f5f3;
+  color: #d96f0b;
+
+  padding-left: 30px;
+}
+
+
+/* =========================
+   SIDEBAR VERIFY
+========================= */
+
+.mobile-sidebar-footer {
+
+  padding: 25px;
+}
+
+.mobile-verify-btn {
+  width: 100%;
+
+  min-height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f59127;
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: background 0.3s ease;
+}
+
+.mobile-verify-btn:hover {
+  background: #d96f0b;
+}
+
+
+/* =====================================================
+   SIDEBAR OVERLAY
+===================================================== */
+
+.mobile-menu-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  z-index: 1500;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.mobile-menu-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+  .navbar-contact-container {
+    padding: 0 20px;
+  }
+
+  .contact-details {
+    gap: 20px;
+  }
+
+  .contact-item {
+    font-size: 12px;
+  }
+
+  .navbar-top-container {
+    height: 90px;
+    padding: 8px 20px;
+  }
+
+  .navbar-brand {
+    gap: 12px;
+  }
+
+  .navbar-logo-image {
+    width: 120px !important;
+    height: 75px !important;
+  }
+
+  .brand-name span {
+    font-size: 15px;
+  }
+
+  .brand-name span + span {
+    margin-top: 7px;
+  }
+
+  .navbar-menu {
+    min-height: 54px;
+    padding: 0 20px;
+    gap: 25px;
+  }
+
+  .navbar-menu a {
+    font-size: 14px;
+  }
+
+  .verify-btn {
+    min-width: 165px;
+    height: 42px;
+    font-size: 14px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 800px) {
+
+  /* =========================
+     CONTACT BAR
+  ========================= */
+
+  .navbar-contact-container {
+    min-height: 38px;
+    padding: 0 15px;
+  }
+
+  .contact-details {
+    gap: 12px;
+  }
+
+  .contact-item {
+    font-size: 9px;
+    gap: 5px;
+  }
+
+  .contact-item svg {
+    font-size: 9px;
+  }
+
+  .social-icons {
+    gap: 5px;
+  }
+
+  .social-icon {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social-icon svg {
+    font-size: 10px;
+  }
+
+
+  /* =========================
+     MAIN HEADER
+  ========================= */
+
+  .navbar-top-container {
+    height: 78px;
+    padding: 8px 15px;
+  }
+
+  .navbar-brand {
+    gap: 9px;
+  }
+
+  .navbar-logo-image {
+    width: 90px !important;
+    height: 60px !important;
+  }
+
+  .brand-name span {
+    font-size: 12px;
+  }
+
+  .brand-name span + span {
+    margin-top: 5px;
+  }
+
+
+  /* =========================
+     HIDE DESKTOP VERIFY
+  ========================= */
+
+  .desktop-verify {
+    display: none;
+  }
+
+
+  /* =========================
+     SHOW HAMBURGER
+  ========================= */
+
+  .mobile-menu-btn {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  /* =========================
+     HIDE DESKTOP NAVIGATION
+  ========================= */
+
+  .navbar-menu-section {
+    display: none;
+  }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 500px) {
+
+  .navbar-contact-container {
+    min-height: 34px;
+    padding: 0 12px;
+  }
+
+  .contact-details {
+    gap: 8px;
+  }
+
+  .contact-item {
+    font-size: 7.5px;
+  }
+
+  .contact-item svg {
+    font-size: 7px;
+  }
+
+  .social-icons {
+    gap: 4px;
+  }
+
+  .social-icon {
+    width: 21px;
+    height: 21px;
+  }
+
+  .social-icon svg {
+    font-size: 9px;
+  }
+
+
+  .navbar-top-container {
+    height: 70px;
+    padding: 7px 12px;
+  }
+
+  .navbar-brand {
+    gap: 7px;
+  }
+
+  .navbar-logo-image {
+    width: 70px !important;
+    height: 50px !important;
+  }
+
+  .brand-name span {
+    font-size: 10px;
+  }
+
+  .brand-name span + span {
+    margin-top: 4px;
+  }
+
+  .mobile-menu-btn {
+    font-size: 22px;
+  }
+}

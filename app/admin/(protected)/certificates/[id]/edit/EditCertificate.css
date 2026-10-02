@@ -1,0 +1,391 @@
+/* ================================
+   EDIT CERTIFICATE
+================================ */
+
+.edit-certificate-page {
+  width: 100%;
+  min-height: 100%;
+  background: #f7f7f7;
+}
+
+.edit-certificate-content {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* ================================
+   HEADER
+================================ */
+
+.edit-certificate-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.edit-certificate-label {
+  margin: 0 0 8px;
+  color: #f28c28;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.edit-certificate-header h1 {
+  margin: 0;
+  color: #111111;
+  font-size: 36px;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+.edit-certificate-header > button {
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  color: #222222;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.edit-certificate-header > button:hover {
+  background: #111111;
+  border-color: #111111;
+  color: #ffffff;
+}
+
+/* ================================
+   MESSAGE
+================================ */
+
+.edit-certificate-message {
+  margin-bottom: 25px;
+  padding: 13px 16px;
+  background: #ffffff;
+  border-left: 4px solid #f28c28;
+  border-radius: 5px;
+  color: #333333;
+  font-size: 14px;
+}
+
+/* ================================
+   FORM
+================================ */
+
+.edit-certificate-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ================================
+   SECTION
+================================ */
+
+.edit-certificate-section {
+  padding: 28px 30px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+}
+
+.edit-certificate-section h2 {
+  margin: 0 0 24px;
+  color: #111111;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+/* ================================
+   GRID
+================================ */
+
+.edit-certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+/* ================================
+   FIELDS
+================================ */
+
+.edit-certificate-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.edit-certificate-field label {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.edit-certificate-field input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  color: #222222;
+  padding: 12px 14px;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.edit-certificate-field input:focus {
+  border-color: #f28c28;
+  box-shadow:
+    0 0 0 2px
+    rgba(242, 140, 40, 0.08);
+}
+
+.edit-certificate-field input[type="file"] {
+  padding: 10px;
+  background: #f7f7f7;
+  cursor: pointer;
+}
+
+.edit-certificate-field
+  input[type="file"]::file-selector-button {
+  margin-right: 12px;
+  border: none;
+  background: #111111;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.edit-certificate-field
+  input[type="file"]::file-selector-button:hover {
+  background: #f28c28;
+}
+
+.edit-certificate-field small {
+  color: #777777;
+  font-size: 12px;
+}
+
+/* ================================
+   PDF
+================================ */
+
+.certificate-pdf-preview {
+  margin-bottom: 25px;
+}
+
+.certificate-pdf-preview p {
+  margin: 0 0 12px;
+  color: #555555;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.certificate-pdf-preview a {
+  display: inline-block;
+  padding: 11px 17px;
+  background: #111111;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.certificate-pdf-preview a:hover {
+  background: #f28c28;
+}
+
+/* ================================
+   SUBMIT
+================================ */
+
+.edit-certificate-submit {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.edit-certificate-submit button {
+  min-width: 180px;
+  border: none;
+  background: #f28c28;
+  color: #ffffff;
+  padding: 14px 28px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.edit-certificate-submit button:hover {
+  background: #111111;
+}
+
+.edit-certificate-submit button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ================================
+   LOADING
+================================ */
+
+.edit-certificate-loading {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555555;
+  font-size: 15px;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+  .edit-certificate-content {
+    padding: 25px 20px 50px;
+  }
+
+  .edit-certificate-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .edit-certificate-header h1 {
+    font-size: 30px;
+  }
+
+  .edit-certificate-header > button {
+    width: 100%;
+  }
+
+  .edit-certificate-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .edit-certificate-section {
+    padding: 24px;
+  }
+
+  .edit-certificate-submit {
+    justify-content: stretch;
+  }
+
+  .edit-certificate-submit button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .edit-certificate-content {
+    padding: 20px 15px 40px;
+  }
+
+  .edit-certificate-section {
+    padding: 20px;
+  }
+
+  .edit-certificate-header h1 {
+    font-size: 27px;
+  }
+}
+.edit-certificate-field-full {
+  grid-column: 1 / -1;
+}
+
+.edit-certificate-field textarea {
+  width: 100%;
+  min-height: 48px;
+  padding: 14px;
+  box-sizing: border-box;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  outline: none;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #111111;
+  background: #ffffff;
+}
+
+.edit-certificate-field textarea:focus {
+  border-color: #f28c28;
+  box-shadow: 0 0 0 2px rgba(242, 140, 40, 0.08);
+}
+
+.edit-certificate-profile-image {
+  margin-bottom: 20px;
+}
+
+.edit-certificate-profile-preview {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.edit-certificate-profile-preview img {
+  width: 150px;
+  height: 180px;
+  object-fit: cover;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+
+.edit-certificate-profile-preview button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  background: #111111;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.edit-certificate-profile-preview button:hover {
+  background: #333333;
+}
+
+.edit-certificate-profile-preview button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.edit-certificate-no-image {
+  width: 150px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed #cccccc;
+  border-radius: 4px;
+  color: #888888;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .edit-certificate-field-full {
+    grid-column: auto;
+  }
+
+  .edit-certificate-profile-preview {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,651 @@
+/* =========================
+   OUR COURSES PAGE
+========================= */
+
+.ourcourses-page {
+  width: 100%;
+}
+
+/* =========================
+   BANNER
+========================= */
+
+.ourcourses-banner {
+  width: 100%;
+  min-height: 240px;
+  background: #f28c28;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.ourcourses-banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ourcourses-banner h1 {
+  margin: 0 0 12px;
+  color: #ffffff;
+  font-size: clamp(32px, 5vw, 58px);
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.ourcourses-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.ourcourses-breadcrumb a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.ourcourses-breadcrumb a:hover {
+  opacity: 0.75;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.ourcourses-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.ourcourses-intro {
+  width: 100%;
+  padding: 70px 20px 45px;
+  background: #ffffff;
+}
+
+.ourcourses-intro-content {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ourcourses-small-title {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #f28c28;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.ourcourses-intro h2 {
+  margin: 0 0 16px;
+  color: #222222;
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.ourcourses-intro p {
+  max-width: 760px;
+  margin: 0 auto;
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* =========================
+   COURSES SECTION
+========================= */
+
+.ourcourses-courses {
+  width: 100%;
+  padding: 20px 20px 80px;
+  background: #ffffff;
+}
+
+/* =========================
+   COURSES GRID
+========================= */
+
+.ourcourses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* =========================
+   COURSE CARD
+========================= */
+
+.ourcourses-card {
+  background: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 2px solid #f2f2f2;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   THUMBNAIL
+========================= */
+
+.ourcourses-thumbnail {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background: #111111;
+}
+
+.ourcourses-thumbnail-image {
+  object-fit: fit;
+}
+
+/* =========================
+   PLAY BUTTON
+========================= */
+
+.ourcourses-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 68px;
+  height: 68px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.ourcourses-play-icon {
+  font-size: 24px;
+  margin-left: 4px;
+  line-height: 1;
+}
+
+/* =========================
+   COURSE CONTENT
+========================= */
+
+.ourcourses-content {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.ourcourses-content h3 {
+  margin: 0 0 18px;
+  font-size: 22px;
+  line-height: 1.35;
+  font-weight: 700;
+  color: #111111;
+}
+
+/* =========================
+   COURSE META
+========================= */
+
+.ourcourses-meta {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.ourcourses-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 14px;
+  color: #666666;
+}
+
+.ourcourses-meta-icon {
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #f3f3f3;
+
+  color: #111111;
+  font-size: 13px;
+}
+
+/* =========================
+   PRACTICAL TRAINING
+========================= */
+
+.ourcourses-practical {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 15px;
+
+  font-size: 14px;
+  font-weight: 600;
+  color: #222222;
+}
+
+.ourcourses-check-icon {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #25d366;
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* =========================
+   COURSE INCLUDES
+========================= */
+
+.ourcourses-includes {
+  margin-top: 18px;
+
+  font-size: 14px;
+  font-weight: 500;
+  color: #999999;
+}
+
+/* =========================
+   COURSE POINTS
+========================= */
+
+.ourcourses-points {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.ourcourses-points li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666666;
+}
+
+.ourcourses-points li:last-child {
+  margin-bottom: 0;
+}
+
+.ourcourses-point-icon {
+  flex-shrink: 0;
+
+  margin-top: 3px;
+
+  width: 16px;
+  height: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f28c28;
+  color: #ffffff;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+/* =========================
+   GET STARTED BUTTON
+========================= */
+
+.ourcourses-button-wrapper {
+  margin-top: auto;
+  padding-top: 25px;
+}
+
+.ourcourses-start-btn {
+  width: 100%;
+
+  padding: 13px 18px;
+
+  border-radius: 4px;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  background: #f28c28;
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: background 0.3s ease;
+}
+
+.ourcourses-start-btn:hover {
+  background: #dd6d0d;
+}
+
+/* =========================
+   VIDEO MODAL
+========================= */
+
+.ourcourses-video-modal {
+  position: fixed;
+  inset: 0;
+
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+
+  background: rgba(0, 0, 0, 0.82);
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.ourcourses-video-modal-content {
+  position: relative;
+
+  width: 100%;
+  max-width: 1100px;
+
+  aspect-ratio: 16 / 9;
+
+  background: #000000;
+
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ourcourses-video {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  background: #000000;
+}
+
+.ourcourses-video-close-btn {
+  position: absolute;
+
+  top: 12px;
+  right: 12px;
+
+  z-index: 2;
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.55);
+
+  color: #ffffff;
+
+  font-size: 28px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition: background 0.3s ease;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+
+  .ourcourses-intro {
+    padding: 65px 20px 40px;
+  }
+
+  .ourcourses-intro h2 {
+    font-size: 36px;
+  }
+
+  .ourcourses-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+
+  .ourcourses-thumbnail {
+    height: 250px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .ourcourses-banner {
+    min-height: 190px;
+    padding: 30px 20px;
+  }
+
+  .ourcourses-banner h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+  }
+
+  .ourcourses-breadcrumb {
+    font-size: 14px;
+    gap: 8px;
+  }
+
+  .ourcourses-intro {
+    padding: 55px 20px 35px;
+  }
+
+  .ourcourses-small-title {
+    font-size: 13px;
+  }
+
+  .ourcourses-intro h2 {
+    font-size: 29px;
+  }
+
+  .ourcourses-intro p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .ourcourses-courses {
+    padding: 15px 15px 60px;
+  }
+
+  .ourcourses-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .ourcourses-thumbnail {
+    height: 240px;
+  }
+
+  .ourcourses-content {
+    padding: 20px;
+  }
+
+  .ourcourses-content h3 {
+    font-size: 20px;
+  }
+
+  .ourcourses-meta {
+    gap: 15px;
+  }
+
+  .ourcourses-video-modal {
+    padding: 15px;
+  }
+
+  .ourcourses-video-close-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+  }
+}
+ /* ================================
+    DYNAMIC COURSE SKELETON
+================================ */
+
+.ourcourses-skeleton {
+  position: relative;
+  overflow: hidden;
+  background: #e6e6e6;
+  border-radius: 4px;
+}
+
+.ourcourses-skeleton::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.65),
+    transparent
+  );
+
+  animation: ourcoursesSkeletonLoading 1.4s infinite;
+}
+
+@keyframes ourcoursesSkeletonLoading {
+  100% {
+    left: 150%;
+  }
+}
+
+
+/* Thumbnail */
+
+.ourcourses-skeleton-thumbnail {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+
+
+/* Title */
+
+.ourcourses-skeleton-title {
+  width: 85%;
+  height: 27px;
+  margin-bottom: 18px;
+}
+
+
+/* Meta */
+
+.ourcourses-skeleton-meta {
+  width: 105px;
+  height: 18px;
+}
+
+
+/* Practical */
+
+.ourcourses-skeleton-practical {
+  width: 180px;
+  height: 18px;
+}
+
+
+/* Includes */
+
+.ourcourses-skeleton-includes {
+  width: 90px;
+  height: 18px;
+  margin-top: 18px;
+}
+
+
+/* Points */
+
+.ourcourses-skeleton-point {
+  width: 90%;
+  height: 15px;
+}
+
+
+/* Button */
+
+.ourcourses-skeleton-button {
+  width: 100%;
+  height: 46px;
+}
+
+
+/* Empty State */
+
+.ourcourses-empty {
+  width: 100%;
+  padding: 60px 20px;
+  text-align: center;
+  color: #666666;
+  font-size: 16px;
+}
